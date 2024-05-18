@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Lobster&family=Poetsen+One&display=swap');
+
 .container {
     width: 50%;
     height: 900px;
@@ -7,13 +8,15 @@
     display: flex;
 }
 
-body{
+
+body {
     color: #e8e8e8;
 
 }
 
-.visible{
-    transform: translateX(0); /* Volta para a posição original */
+.visible {
+    transform: translateX(0);
+    /* Volta para a posição original */
     opacity: 1;
 
 }
@@ -22,8 +25,10 @@ body{
     width: 33.33%;
 
 }
-li{
-    transform: translateX(-100px); /* Inicia fora da tela, à esquerda */
+
+li {
+    transform: translateX(-100px);
+    /* Inicia fora da tela, à esquerda */
     opacity: 0;
     transition: transform 1s ease-out, opacity 1s ease-out;
 }
@@ -32,7 +37,7 @@ li{
     background-color: #323232;
 }
 
- .space .bodyport {
+.space .bodyport {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -41,22 +46,27 @@ li{
 .bodyclass {
     height: 100%;
 }
-.white{
+
+.white {
     background-color: #e8e8e8;
 }
-footer{
+
+footer {
     margin-bottom: 5px;
     margin-left: 5px;
 }
-header{
+
+header {
     margin-top: 0px;
 }
-.bloco3{
+
+.bloco3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.bodyclass h1{
+
+.bodyclass h1 {
     font-size: 5.1rem;
     text-align: center;
 }
@@ -66,5 +76,46 @@ header{
     font-weight: 400;
     font-style: normal;
 
-  }
-  
+}
+
+
+
+@media (max-width: 1600px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 1000px) {
+    .container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-left:0;
+        margin-right: 0;
+    }
+
+    footer {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .bodyclass h1 {
+        padding: 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+    body{
+        width: 100%;
+    }
+
+}
