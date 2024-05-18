@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabricio sousa</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="container">
+       <div class="space black ">
+           <ul  style="width: 100%;height: 100%;display: flex;flex-direction: column;justify-content: space-evenly;">
+            <li>
+                Tratamento de dados com SQL
+            </li>
+            <li>
+                Correção e manutenção de procedures, <br> triggers e funções no oracle
+            </li>
+            <li>
+                Desenvolver baseado nas regras <br> de negócios da corporação
+            </li>
+            <li>
+                Documentação de telas
+            </li>
+   
+           </ul>
+       </div>
+       <div class="space ">
+
+        <div class="bodyport">
+
+            <div class="bodyclass white">
+            
+            </div>
+            <div class="bodyclass black lobster-color" style="display: flex;justify-content: center;align-items: center;">
+                  <h1>Fabricio <br> sousa</h1>
+            </div>
+            <div class="bodyclass white">
+ 
+            </div>
+        </div>
+
+       </div>
+       <div class="space black bloco3 " >
+        <header style="padding: 20px;">
+            <h1 style="text-align: center;">Projeto</h1> <br>
+            <h3>
+                <p>Atualmente desenvolvendo um sistema de gestão vendas para fins de estudo,controle de estoque,parceiros,usuários e produtos </p>
+                <ul>
+                    <li>Node </li>
+                    <li>Oracle</li>
+                    <li>EJS</li>
+                    <li>API de CEP dos correios</li>
+                    <li>API de consulta de CNPJ</li>
+                    <li>POO</li>
+                </ul>
+            </h3>
+            <p>Visite no meu githib para ver alguns de meus códigos ou entre em contato para testar meu projeto de gestão de vendas.
+                <a href="https://github.com/Fabriciodesousa895" style="color: azure;">Meu github</a>
+            
+            </p>
+            
+        </header>
+      <footer>
+        @fabricio_sousa <br>
+        (94) 98409 - 1297
+      </footer>
+       </div>
+    </div>
+</body>
+<script>
+    // Definir as opções do Intersection Observer
+    let options = {
+        root: null, 
+        rootMargin: '1px',
+        threshold: 1 
+    };
+
+    // Definir a função callback para o Intersection Observer
+    function callback(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Adiciona a classe 'visible' para iniciar a animação
+                entry.target.classList.add('visible');
+            }
+        });
+    }
+
+    // Criar uma instância do Intersection Observer
+    let observer = new IntersectionObserver(callback, options);
+
+    // Selecionar os elementos para observar
+    let targets = document.querySelectorAll('li');
+    targets.forEach(target => {
+        observer.observe(target);
+    });
+</script>
+
+</html>

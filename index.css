@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Lobster&family=Poetsen+One&display=swap');
+.container {
+    width: 50%;
+    height: 900px;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+}
+
+body{
+    color: #e8e8e8;
+
+}
+
+.visible{
+    transform: translateX(0); /* Volta para a posição original */
+    opacity: 1;
+
+}
+
+.space {
+    width: 33.33%;
+
+}
+li{
+    transform: translateX(-100px); /* Inicia fora da tela, à esquerda */
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.black {
+    background-color: #323232;
+}
+
+ .space .bodyport {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.bodyclass {
+    height: 100%;
+}
+.white{
+    background-color: #e8e8e8;
+}
+footer{
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+header{
+    margin-top: 0px;
+}
+.bloco3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bodyclass h1{
+    font-size: 5.1rem;
+    text-align: center;
+}
+
+.lobster-color {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+  
