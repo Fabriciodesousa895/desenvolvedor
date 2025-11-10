@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monstros do Lago - Slackline, Longline e Highline</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* HERO */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1509644851204-61a3ab2962d7?auto=format&fit=crop&w=1400&q=60') center/cover no-repeat;
+      color: white;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.8);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: slideUp 1.5s ease forwards 0.5s;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: slideUp 1.5s ease forwards 1s;
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* ANIMAÇÕES DE SCROLL */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section-title {
+      border-bottom: 3px solid #198754;
+      display: inline-block;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .whatsapp-btn {
+      background-color: #25d366;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebe5b;
+      color: white;
+    }
+
+    footer {
+      background: #e9ecef;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Mostros do lago</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#treinos">Treinos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#viagens">Viagens</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Capa -->
+  <section class="hero">
+    <h1>Monstros do Lago</h1>
+    <p style="color:black">Slackline | Longline | Highline | Aventuras nas Alturas</p>
+    <a href="#contato" class="btn btn-success btn-lg mt-3">Entre em Contato</a>
+  </section>
+
+  <!-- Treinos -->
+  <section id="treinos" class="container py-5 fade-in">
+    <h2 class="section-title">Dias de Treino</h2>
+    <p>Os treinos acontecem semanalmente em parques e pontos da cidade. Todos são bem-vindos — dos iniciantes aos monstros do equilíbrio!</p>
+    <ul>
+      <li><strong>Quartas-feiras:</strong> Parque Flamboyant - 17h</li>
+      <li><strong>Sábados:</strong> Lago das Rosas - 8h</li>
+      <li><strong>Domingos:</strong> Serra do Botafogo - Longline e Highline</li>
+    </ul>
+  </section>
+
+  <!-- Viagens -->
+  <section id="viagens" class="bg-light py-5 fade-in">
+    <div class="container">
+      <h2 class="section-title">Viagens e Aventuras</h2>
+      <p>O grupo realiza expedições incríveis para praticar highline e explorar novos lugares. Confira as últimas aventuras:</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Chapada dos Veadeiros</h5>
+              <p class="card-text">3 dias de aventura e equilíbrio nas alturas!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Pedra da Boca</h5>
+              <p class="card-text">Desafios de highline com vista surreal!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Cachoeira do Label</h5>
+              <p class="card-text">Highline entre pedras e cachoeiras incríveis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section id="galeria" class="container py-5 fade-in">
+    <h2 class="section-title">Galeria</h2>
+    <div class="row g-3">
+      
+      <div class="col-6 col-md-3"><img src="https://images.unsplash.com/photo-1500644970114-4ff3c3dfb61f?auto=format&fit=crop&w=500&q=60" class="img-fluid rounded shadow-sm" alt="Foto 2"></div>
+      <div class="col-6 col-md-3"><img src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=500&q=60" class="img-fluid rounded shadow-sm" alt="Foto 3"></div>
+      <div class="col-6 col-md-3"><img src="https://images.unsplash.com/photo-1505731132164-cca903e12d63?auto=format&fit=crop&w=500&q=60" class="img-fluid rounded shadow-sm" alt="Foto 4"></div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="bg-dark text-light text-center py-5 fade-in">
+    <div class="container">
+      <h2 class="section-title text-light">Entre em Contato</h2>
+      <p class="mb-4">Quer participar dos treinos ou das próximas aventuras? Chame no WhatsApp!</p>
+      <a href="https://chat.whatsapp.com/LfuEYOZLxDmKvFp3dKL0Vn" target="_blank" class="btn whatsapp-btn btn-lg">
+        💬 Entrar no Grupo
+      </a>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="text-center text-muted py-3">
+    <small>© 2025 Monstros do Lago — Feito com equilíbrio e amizade 🧗‍♂️</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Detecta elementos e aplica animação quando entram na tela
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
